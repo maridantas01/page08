@@ -1,0 +1,169 @@
+html{
+    font-family: sans-serif;
+}
+
+body{
+    text-align: center;
+}
+
+.header{
+    text-align: center;
+    margin: auto;
+    background-color: #c3eeea;
+}
+
+.header_logo{
+    width: 7em;
+    height: auto;
+    padding-top: .6em;
+    padding-bottom: .6em;
+}
+
+#hamburguer{
+    background-color: color-mix(in srgb, #1b0601 , #BFA584 20%);
+    color: #55ACBD;
+    display: block;
+    text-align: center;
+    padding: 0.3em;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.header_nav{
+    background-color: #D9B8C4;
+    display: none;
+}
+
+.header_nav.show {
+    display: block;
+}
+
+ul{
+    margin: 0;
+}
+
+.header_nav ul{
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .8em;
+}
+
+.header_nav a{
+    color: #260909;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+.header_nav a:hover{
+    background-color: color-mix(in srgb, #82D9D0 , #ffffff 40%);
+    color: #EB9B5E;
+}
+
+
+@media screen and (min-width: 48em) {
+    #hamburguer{
+        display: none;
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #D9B8C4;
+    }
+
+    .header_logo{
+        margin-left: 2em;
+    }
+
+    .header_nav{
+        display: block;
+    }
+
+    .header_nav ul{
+        margin-right: 2em;
+        font-size: .8em;
+    }
+
+    .header_nav li{
+        display: inline-block;
+    }
+
+    .header_nav a{
+        border-radius: 5px;
+    }
+
+    .header_nav a:hover{
+        background-color: #777c28;
+        color: #ffffff;
+    }
+}
+
+.fundo_main{
+    background-image: url(imagens/8.fundo2.jpg);
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center
+
+}
+
+div.galeria a{
+    text-decoration: none;
+    color: #000000;
+    display: inline-block;
+    background-color: color-mix(in srgb,  #C1657E, #D9BAC6 30%);
+    padding: 1em 1.8em;
+    font-size: 1.5em;
+    border-radius: 5px;
+    letter-spacing: .1em;
+    font-family: 'Diphylleia', serif;
+    font-weight: bolder;
+}
+
+div.galeria a:hover{
+    background-color: color-mix(in srgb, #000000, #ffffff 20%);
+    color: color-mix(in srgb,  #C1657E, #D9BAC6 5%);
+}
+
+footer{
+    background-color: #A66583;
+    padding: 1em;
+    text-align: center;
+}
+
+.logos_footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.tamanho{
+    width: 2.5em;
+}
+
+.texto_footer{
+    font-size: 0.6em;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin: 0;
+    padding-top: .8rem;
+    color: #000000;
+    font-family: 'Diphylleia', serif;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 48em) {
+    .logos_footer{
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5em;
+    }
+    
+}
